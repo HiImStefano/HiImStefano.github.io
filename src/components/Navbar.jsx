@@ -13,22 +13,24 @@ const navItems = [
 export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(windowscreenY > 10);
-        }
-        window.addEventListener("scroll", handleScroll);
-        return window.removeEventListener("scroll", handleScroll);
-    }, [])
+            setIsScrolled(window.screenY > 10);
+        };
 
-    return (<nav className={cn("fixed w-full z-40 transitions-all duration-300",
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    return (<nav className={cn("fixed w-full z-40 transition-all duration-300",
         isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
     )}>
         <div className="container flex items-center justify-between">
             <a className="text-xl font-bold text-primary flex item-center" href='#hello'>
                 <span className="relative z-10">
                     <span className="text-glow text-foreground">HI-Stef</span> Portfolio
-                </span>
+                </span> {" "}
             </a>
             {/*Desktop Nav*/}
             <div className="hidden md:flex space-x-8">
@@ -59,4 +61,4 @@ export const Navbar = () => {
 
         </div>
     </nav>);
-}
+};

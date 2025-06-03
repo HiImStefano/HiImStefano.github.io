@@ -8,7 +8,7 @@ import { SkillsSection } from "../components/SkillsSection";
 
 export const Home = () => {
     return(
-    <div className="min-h-dvh bg-background text-foreground overflow-x-hidden">
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
         {/*Theme Toggle */}
         <ThemeToggle />
         {/*Background Effects */}

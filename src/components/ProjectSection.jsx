@@ -1,14 +1,17 @@
+import React from 'react'
+import { Github, ArrowRight, ExternalLink } from "lucide-react";
+
 const projects = [
     {
         title: "Pangea",
         description: "A Full Stack E-Commerce Site created using React, Node.Js, Firebase DB.",
         image: "/src/assets/Pangea.JPG",
-        tags: ["React", "Node.js", "Firebase", "JavaScript"],
+        tags: ["React.js", "Node.js", "Firebase"],
         link: "https://github.com/HiImStefano/Pangea-Ecommerce-Store"
     },
     {
         title: "Shoe Lagoon",
-        description: "A ",
+        description: "A Mobile Application for E-Commerce created using React-Native, Node.js, and Firebase.",
         image: "/src/assets/ShoeLagoonLogo.PNG",
         tags: ["React-Native", "Node.js", "JavaScript"],
         link: "https://github.com/HiImStefano/ShoeLagoon"
@@ -41,9 +44,24 @@ export const ProjectSection = () => {
                                     </span>
                                 ))}                        
                             </div>    
+                        
+                        <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                        <p className="text-muted-foreground mb-4">{project.description}</p>
+                        <div className="flex justify-between items-center">
+                            <div className="flex space-x-3">
+                                <a href={project.link} target="_blank" className='text-foreground/80 hover:text-primary transition-colors duration-300' rel="noopener noreferrer">
+                                    <Github size={20}/>
+                                </a>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="text-center mt-12">
+                <a href="https://github.com/HiImStefano" target="_blank" className="galaxy-button w-fit flex items-center mx-auto gap-2">
+                    View More Projects <ArrowRight size={16} />
+                </a>
             </div>
         </div>
     </section>

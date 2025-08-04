@@ -8,9 +8,9 @@ export const AboutSection = () => {
             </h2>
             <div className="grid grid-cols1 md:grid-cols-2 gap 12 items-center">
                 <div className="space-y-6">
-                    <h3 className="text-2xl font-semibold">Just a silly lil guy</h3>
-                    <p className="text-muted-foreground">I like being silly</p>
-                    <p className="text-muted-foreground">And a lil guy</p>
+                    <h3 className="text-2xl font-semibold">Backend/Full Software Engineer</h3>
+                    <p className="text-muted-foreground">Bachelor's Degree in Computer Science from the University of South Florida (Graduated December 2022)</p>
+                    <p className="text-muted-foreground">Certifications: AWS Cloud Practitioner Certification (Est. 2023)</p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                         <a href="#contact" className="galaxy-button">
@@ -32,8 +32,8 @@ export const AboutSection = () => {
                                 <Code className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg">Back-End Development</h4>
-                                <p className="text-muted-foreground">I type things and they somehow work, its kinda hard when I can't see anything</p>
+                                <h4 className="font-semibold text-lg">Hobbies</h4>
+                                <p className="text-muted-foreground">Formula 1, Coding, Computer Hardware, Table-top games</p>
                             </div>
                         </div>
                     </div>    
@@ -43,8 +43,8 @@ export const AboutSection = () => {
                                 <User className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg">Framework Design</h4>
-                                <p className="text-muted-foreground">Design some cool java stuff</p>
+                                <h4 className="font-semibold text-lg">Current Personal Projects</h4>
+                                <p className="text-muted-foreground">A java-based plugin for a popular game Old School Runescape</p>
                             </div>
                         </div>
                     </div>
@@ -54,8 +54,10 @@ export const AboutSection = () => {
                                 <Briefcase className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg">Software Engineer II at JP Morgan Case</h4>
-                                <p className="text-muted-foreground">Developing solutions on a Java based application</p>
+                                <h4 className="font-semibold text-lg">3 Years Work Experience</h4>
+                                <p className="text-muted-foreground">Currently working at JPMorganChase as a Software Engineer II working on
+                                    the largest payment platform in the world.
+                                </p>
                             </div>
                         </div></div>    
                 </div>

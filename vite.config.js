@@ -11,26 +11,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     }
   },
-  esbuild:{
-    loaders: {
-      '.js': 'jsx',
-      '.ts': 'tsx',
-      '.jsx': 'jsx',
-      '.tsx': 'tsx'
-    }
-  },
-  resolve: {
-    alias: {
-      '.runtimeConfig': './src/runtimeConfig.js',}
-    },
-    optimizeDeps: {
-      esbuildOptions: {
-        loader: {
-          '.js': 'jsx',
-          '.ts': 'tsx',
-          '.jsx': 'jsx',
-          '.tsx': 'tsx'
-        }
-      }
-    }
+  base: "/Portfolio/"
 });
